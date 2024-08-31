@@ -1,10 +1,12 @@
 ---
 import { TextSection } from '@components/odyssey-theme';
+import Picture from 'astro/components/Picture.astro';
 import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
+//import myBioImage from '/assets/images/home/AvtarBetterPhotoNoBackground.png';
 
 const seo = {
-	title: 'About | Astro Odyssey Theme',
+	title: 'About | Avtar Khaba',
 	description: 'About Page',
 };
 ---
@@ -12,36 +14,154 @@ const seo = {
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>About Odyssey</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
-				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
-				autem iste reprehenderit, aliquam ducimus illo ea ipsum qui animi sequi.
-				Numquam.
-			</p>
+			<h1>About Us</h1>  
 		</div>
-    <picture slot="image-container">
+    <!-- <Picture src={myBioImage} >
       <img
-        src="/assets/images/home/classic-hero.jpg"
-        alt="Astro Odyssee"
+        src="/assets/images/home/AvtarBetterPhotoNoBackground.png"
+        alt="Meet Avtar Khaba"
         id="home-hero-image"
+        class="avtar-image"
+      />
+    </Picture> -->
+    <picture  slot="image-container"  class="avtar-image" >
+      <img
+        src="/assets/images/home/AvtarBetterPhotoNoBackground.png"
+        alt="Meet Avtar Khaba"
+        id="home-hero-image"
+       
       />
     </picture>
+
+    <div slot="text-container">
+     
+    <a
+      href="https://www.linkedin.com/in/avtar-khaba"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="linkedin-icon"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="size:"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7h-3.56V9h3.42v1.56h.05c.48-.91 1.65-1.87 3.4-1.87 3.63 0 4.3 2.39 4.3 5.5v6.26z"
+        ></path>
+      </svg>
+    </a>
+    </div>
 	</HeroSection>
   <TextSection narrow>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo asperiores alias illo accusamus voluptatem ea cum nemo odit! Consequatur quidem quo iusto quam ea neque nisi dolorum quod, recusandae id!
-      Repudiandae, fugit labore voluptatum beatae modi omnis adipisci corrupti aut aliquid cumque inventore iure possimus doloremque iste incidunt nulla architecto. Nobis iusto sunt voluptatem necessitatibus laborum, earum doloremque fugit rerum!
-    </p>
-    <p>Fugit asperiores harum consectetur sapiente deleniti. Optio enim tenetur impedit reprehenderit labore, illo eius in, consequatur odio dolore iste assumenda explicabo, nisi similique qui obcaecati possimus delectus reiciendis quod modi.</p>
+    <!-- <p>
+      Meet Avtar Khaba - Founder & CEO
+      With over three decades of experience, I have designed, implemented, and managed complex digital transformation projects using cutting-edge technology across various industries, including the public sector, defence, retail, technology, financial services, and professional services. This work has enabled organizations such as Deloitte, The British Army, NatWest, the Scottish Government, BAE Systems, the NHS, and the UK Home Office to maximize their technology investments, boost efficiency, foster innovation, and leverage strategic partnerships to achieve their business goals.
+      
+      Do you or your organisation use the Co-Authoring feature in Microsoft Office?
+      
+      One of my most notable achievements is developing the prototype for the Co-Authoring feature in Microsoft Office, enabling real-time collaboration within documents, spreadsheets, and presentations. At a time when the idea seemed radical and many in the industry believed it was impossible, I secured angel funding and initiated the patent process. This patent and technology were later acquired by Microsoft and integrated into what is now known as Co-Authoring in Microsoft Office. Please click on the link to find out more about the Co-Authoring and Information Management System - https://bit.ly/4cns8pa
+      
+      As the Founder and CEO of TopDown Tech, my goal is to help C-suite leaders maximize their technology investments by bringing innovative thinking and practical implementation to their organizations. If you're looking for a tech leader to advise and partner with, please email me at Avtar.Khaba@Topdown.tech
+    </p> -->
     
-    <p>
-      Vel tempore rem omnis esse officiis optio, explicabo, quod deleniti adipisci ullam cum necessitatibus eius minus vero saepe ad, dicta rerum praesentium deserunt illo itaque odio corrupti voluptatum quibusdam. Pariatur.
-      Porro neque tempore, illum eligendi deleniti iure dolorem amet magnam at dolores veniam nemo cumque aut alias repellat est dicta sit repellendus facilis officia? Minima dolorum quo ducimus adipisci perferendis.
+<div class="">
+  <h1 class="">Meet Avtar Khaba</h1>
+  
+  <h2 class="">Our CEO & Founder</h2>
+  <p class="">
+    Hello! I am Avtar, a passionate innovator with a knack of turning
+    creative ideas into actionable solutions.
+  </p>
+
+  <p >
+    With over three decades of experience, I have designed, implemented,
+    and managed complex digital transformation projects using cutting-edge
+    technology across various industries, including the public sector,
+    defence, retail, technology, financial services, and professional
+    services. This work has enabled organizations such as Deloitte, The
+    British Army, NatWest, the Scottish Government, BAE Systems, the NHS,
+    and the UK Home Office to maximize their technology investments, boost
+    efficiency, foster innovation, and leverage strategic partnerships to
+    achieve their business goals.
+  </p>
+  
+  <p >
+    Do you or your organisation use the Co-Authoring feature in Microsoft
+    Office?
+  </p>
+ 
+  <p>
+    One of my most notable achievements is developing the prototype for
+    the Co-Authoring feature in Microsoft Office, enabling real-time
+    collaboration within documents, spreadsheets, and presentations. At a
+    time when the idea seemed radical and many in the industry believed it
+    was impossible, I secured angel funding and initiated the patent
+    process. This patent and technology were later acquired by Microsoft
+    and integrated into what is now known as Co-Authoring in Microsoft
+    Office. <br>Please click on the link to find out more about the
+    Co-Authoring and Information Management System - <a
+      href="https://bit.ly/4cns8pa"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="underline">https://bit.ly/4cns8pa</a
+    >
+  </p>
+
+<div class="flex ">
+    <img src="/assets/images/3i.svg" alt="3i Logo" />
+    <div>
+      <p>
+      As a successful founder, I have been funded by   so understand both the commercial and technology worlds. 
+      I understand the growing pains and chanlleges for both investors and founders.  
+      I have also been a CTO and CIO so understand the challenges of running technology in a business.
     </p>
-    <p>
-      Quis distinctio tempora sequi sit repudiandae cumque nostrum deserunt, voluptatibus rem eum fuga modi beatae cum ullam delectus dicta atque eius nam quos corporis. Animi praesentium quae nobis. Odit, mollitia. Voluptatum, hic explicabo. Ex accusamus ipsa ea dolor commodi quas esse ipsum alias et adipisci error necessitatibus atque facere rerum ratione consequatur aspernatur repudiandae minima consectetur fuga, doloremque dolorum pariatur.
-      Ipsam error eaque velit possimus porro eum quod illo iusto officia magnam magni, beatae nisi voluptate praesentium? Saepe distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit minus?
-    </p>
+    </div>
+  
+</div>
+
+  <p class="">
+    As the Founder and CEO of TopDown Tech, my goal is to help C-suite
+    leaders maximize their technology investments by bringing innovative
+    thinking and practical implementation to their organizations. If
+    you're looking for a tech leader to advise and partner with, please
+    email me at <a
+      href="mailto:Avtar.Khaba@Topdown.tech"
+      class="text-blue-600 underline">Avtar.Khaba@Topdown.tech</a
+    >
+  </p>
+  <a
+    href="https://outlook-sdf.office.com/bookwithme/user/d366ca9117564caebbeeb42c0b6fbbec@topdown.tech/meetingtype/SrMJM1YyiU6pslJOmFb04w2?anonymous&ep=mlink"
+    class="mt-4"
+  >
+    <button
+      class=""
+    >
+      Speak to Avtar
+    </button>
+  </a>
+
   </TextSection>
 </Layout>
+
+<style>
+  .linkedin-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  .avtar-image {
+    width: 500px;
+    height:530px;
+    border-radius: 100px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  .logo-image {
+    width: 50px; 
+    height: 50px;/* Adjust the size as needed */
+    margin-right: 30px; /* Add some space between the image and the text */
+  }
+</style>

@@ -1,15 +1,38 @@
 ---
+
 ---
 
-<p class="odyssey-logo">Odyssey</p>
+
+<div class="flex items-center">
+	<img
+	  src="/assets/images/favicon.png"
+	  alt="TopDown Tech Logo"
+	  class="topdown-logo"
+	/>
+	<p class="odyssey-logo">TopDown Tech</p>
+  </div>
+
 
 <style>
+	.flex {
+		display: flex;
+		align-items: center;
+	}
+	.topdown-logo {
+		width: 60px;
+		height: 60px;
+		margin: 0;
+		font-family: 'Open Sans', sans-serif;
+		
+		font-weight: var(--font-weight-bold);
+	}
 	.odyssey-logo {
 		width: fit-content;
 		margin: 0;
 		font-family: var(--theme-font-family-serif);
-    font-size: var(--font-size-md);
-		color: inherit;
+		color: #6d6c69;
+    	font-size: var(--font-size-md);
+		font-weight: var(--font-weight-bold);
 	}
 	.odyssey-logo:hover {
 		text-decoration: underline;

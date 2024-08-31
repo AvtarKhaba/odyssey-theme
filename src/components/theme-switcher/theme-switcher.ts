@@ -34,7 +34,13 @@ const themes = [
     name: 'sand',
     icon: orangeThemeIcon,
     label: 'Sand',
+  },
+  {
+    name: 'topdown',
+    icon: orangeThemeIcon,
+    label: 'TopDown',
   }
+
 ]
 
 @customElement('theme-switcher')
